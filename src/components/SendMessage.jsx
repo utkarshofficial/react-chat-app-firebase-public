@@ -13,8 +13,8 @@ const SendMessage = () => {
 
   const sendMessage = async (e) => {
     e.preventDefault();
-    if (input === "") {
-      alert("Please enter a valid message");
+    if (input.trim() === "") {
+      setInput("");
       return;
     }
     const { uid, displayName } = auth.currentUser;
