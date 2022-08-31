@@ -30,7 +30,7 @@ const Chat = ({ user }) => {
   }, []);
 
   useEffect(() => {
-    if (user != null) {
+    if (user !== null) {
       scroll.current.scrollIntoView({ behavior: "smooth" });
     }
   }, [messages]);
